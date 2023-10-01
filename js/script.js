@@ -1,6 +1,6 @@
-const openBtn = document.querySelector('.btn.open')
+const openBtn = document.querySelector('.open')
 openBtn.style.display = 'none'
-const closeBtn = document.querySelector('.btn.close')
+const closeBtn = document.querySelector('.close')
 
 const widget = document.querySelector('.widget')
 

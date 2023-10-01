@@ -1,5 +1,69 @@
+@-webkit-keyframes pulsation {
+  0% {
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes pulsation {
+  0% {
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes dotScale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+@keyframes dotScale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
 body {
-  background: #000;
+  background: #f66b0e;
 }
 
 .right {
@@ -8,17 +72,30 @@ body {
   .close_container {
     justify-content: flex-end !important;
   }
+
+  .contact-widget-pulsation {
+    right: -8px;
+    left: auto !important;
+  }
+  .contact-widget-pulsation-second {
+    left: auto !important;
+    right: -13px;
+  }
 }
 
 .wrapper {
+  z-index: 1000;
   position: fixed;
   bottom: 10px;
   width: 320px;
   display: flex;
   flex-direction: column;
   margin-top: 48px;
-  gap: 16px;
 
+  .widget {
+    animation: fadeIn 350ms ease;
+    margin-bottom: -20px;
+  }
   .top {
     display: flex;
     align-items: center;
@@ -141,7 +218,7 @@ body {
     height: 64px;
     border-radius: 50%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
 
@@ -161,6 +238,40 @@ body {
   .btn svg {
     width: 64px;
     height: 64px;
+  }
+
+  .contact-widget-item {
+    transition: all 0.2s ease;
+  }
+
+  .contact-widget-pulsation {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -8px;
+    left: -8px;
+    z-index: -1;
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-animation: pulsation 2s infinite;
+    animation: pulsation 3s infinite;
+  }
+  .contact-widget-pulsation-second {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    position: absolute;
+    left: -13px;
+    bottom: -13px;
+    z-index: -1;
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-animation: pulsation 2s infinite;
+    animation: pulsation 3s infinite;
+    animation-delay: 200ms;
   }
 }
 
@@ -186,31 +297,45 @@ body {
 }
 
 .min_wrapper {
+  z-index: 1000;
   position: fixed;
   bottom: 10px;
+  width: 88px;
   left: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
 
-  .middle {
-    top: 0px;
+  .widget {
+    animation: fadeIn 350ms ease;
   }
 
+  .close_container .btn {
+    position: relative;
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
   .close_container svg {
     width: 64px;
     height: 64px;
   }
   .service_list {
+    display: flex;
+    gap: 16px;
     flex-direction: column;
   }
   .mobile {
+    margin-bottom: -10px;
     width: 88px;
   }
 
-  .mobile .top,
-  .mobile .bottom {
+  .top,
+  .bottom {
     display: none;
   }
 
@@ -220,16 +345,86 @@ body {
     border-radius: 32px;
   }
 
+  .contact-widget-item {
+    transition: all 0.2s ease;
+  }
+  .contact-widget-item:hover {
+    transform: scale(1.2);
+  }
+
+  .contact-widget-pulsation {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -8px;
+    left: 4px !important;
+    z-index: -1;
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-animation: pulsation 2s infinite;
+    animation: pulsation 3s infinite;
+  }
+  .contact-widget-pulsation-second {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    position: absolute;
+    left: -1px !important;
+    bottom: -13px;
+    z-index: -1;
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-animation: pulsation 2s infinite;
+    animation: pulsation 3s infinite;
+    animation-delay: 200ms;
+  }
+
   @media screen and (max-width: 480px) {
     .mobile {
       width: 77px;
     }
+    .middle {
+      display: flex;
+      justify-content: center;
+      margin-bottom: -2px;
+    }
     .service_list {
-      width: 88px;
+      width: 48px;
     }
     .contact-widget-item svg {
       width: 48px;
       height: 48px;
     }
   }
+}
+
+.contact-widget-item:hover {
+  transform: scale(1.2);
+}
+
+.dot-one {
+  transform-origin: center;
+  animation: dotScale 2s infinite;
+  -webkit-animation: dotScale 2s infinite;
+  -moz-animation: dotScale 2s infinite;
+  -o-animation: dotScale 2s infinite;
+}
+.dot-two {
+  transform-origin: center;
+  animation: dotScale 2s infinite;
+  -webkit-animation: dotScale 2s infinite;
+  -moz-animation: dotScale 2s infinite;
+  -o-animation: dotScale 2s infinite;
+  animation-delay: 400ms;
+}
+.dot-three {
+  transform-origin: center;
+  animation: dotScale 2s infinite;
+  -webkit-animation: dotScale 2s infinite;
+  -moz-animation: dotScale 2s infinite;
+  -o-animation: dotScale 2s infinite;
+  animation-delay: 600ms;
 }
