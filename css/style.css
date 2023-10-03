@@ -109,6 +109,9 @@ body {
     padding-bottom: 48px;
   }
 
+  .mobile_copyright {
+    display: none;
+  }
   .top .logo {
     position: absolute;
     top: -50px;
@@ -343,6 +346,16 @@ body {
     height: max-content;
     padding: 12px;
     border-radius: 32px;
+  }
+
+  .mobile_copyright {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .hide_copy {
+    display: none;
   }
 
   .contact-widget-item {
