@@ -332,6 +332,10 @@ body {
     gap: 16px;
     flex-direction: column;
   }
+
+  .contact-widget-item:last-child {
+    padding-bottom: 18px;
+  }
   .mobile {
     margin-bottom: -10px;
     width: 88px;
@@ -351,7 +355,6 @@ body {
   .mobile_copyright {
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
   }
 
   .hide_copy {
@@ -402,6 +405,8 @@ body {
     .middle {
       display: flex;
       justify-content: center;
+      flex-direction: column;
+      align-items: center;
       margin-bottom: -2px;
     }
     .service_list {
