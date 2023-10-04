@@ -315,17 +315,15 @@ body {
       margin-bottom: -2px;
       border-radius: 32px;
       padding: 24px 0;
+      gap: 16px;
       top: auto;
     }
     .service_list {
       flex-direction: column;
     }
-
-    .contact-widget-item:last-child {
-      margin-bottom: 18px;
-    }
     .mobile_copyright {
       display: flex;
+      margin-bottom: 18px;
     }
     .mobile_copyright svg {
       display: flex;
