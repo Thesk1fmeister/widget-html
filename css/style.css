@@ -50,7 +50,6 @@
     transform: scale(1.15);
   }
 }
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -81,12 +80,17 @@ body {
     left: auto !important;
     right: -13px;
   }
+
+  .rotate {
+    transform: scaleX(1) !important;
+  }
 }
 
 .wrapper {
   z-index: 1000;
   position: fixed;
   bottom: 10px;
+  left: 10px;
   width: 320px;
   display: flex;
   flex-direction: column;
@@ -135,6 +139,10 @@ body {
     text-align: center;
     font-size: 20px;
     font-weight: 700;
+  }
+
+  .rotate {
+    transform: scaleX(-1);
   }
 
   .top .desc {
@@ -331,6 +339,10 @@ body {
     display: flex;
     gap: 16px;
     flex-direction: column;
+  }
+
+  .rotate {
+    transform: scaleX(-1);
   }
 
   .contact-widget-item:last-child {
