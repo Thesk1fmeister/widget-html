@@ -15,7 +15,7 @@
   <body>
     <!-- min_wrapper (class) - заміняє wrapper для min версії -->
     <!-- right (class) - прибирати якщо позиціонування left -->
-    <div class="wrapper">
+    <div class="wrapper right">
       <div class="widget mobile">
         <div class="top" style="background: #663b3b">
           <div class="logo">
@@ -25,8 +25,9 @@
           <div class="desc" style="color: #000">Опис</div>
         </div>
         <div class="middle" style="background: #ff9e9e">
-          <div class="service_list">
-            <!-- <a rel="noopener noreferrer" href="$telegram" target="_blank" class="contact-widget-item"
+          <!-- Якщо кількість лінків більше 5 додаємо клас scroll -->
+          <div class="service_list scroll">
+            <a rel="noopener noreferrer" href="$telegram" target="_blank" class="contact-widget-item"
               ><span class="contact-widget-item-icon contact-widget-whatsapp d-flex align-items-center justify-content-center">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="64" height="64" rx="32" fill="#28A8EA" />
@@ -38,7 +39,7 @@
                   />
                 </svg> </span
             ></a>
-            <a rel="noopener noreferrer" href="$whatsapp" target="_blank" class="contact-widget-item"
+            <!-- <a rel="noopener noreferrer" href="$whatsapp" target="_blank" class="contact-widget-item"
               ><span class="contact-widget-item-icon contact-widget-whatsapp d-flex align-items-center justify-content-center">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="64" height="64" rx="32" fill="#25D366" />
@@ -56,7 +57,7 @@
                     d="M40.1 35.74C40 35.5733 39.7333 35.4733 39.34 35.2733C38.94 35.0733 36.9867 34.1133 36.62 33.98C36.2533 33.8466 35.9867 33.78 35.7267 34.18C35.46 34.58 34.7 35.4733 34.4667 35.74C34.2333 36.0066 34 36.04 33.6067 35.84C33.2067 35.64 31.9267 35.22 30.4067 33.8666C29.22 32.8133 28.4267 31.5066 28.1933 31.1066C27.96 30.7066 28.1667 30.4933 28.3667 30.2933C28.5467 30.1133 28.7667 29.8266 28.9667 29.5933C29.1667 29.36 29.2333 29.1933 29.3667 28.9266C29.5 28.66 29.4333 28.4266 29.3333 28.2266C29.2333 28.0266 28.44 26.0666 28.1067 25.2733C27.7867 24.5 27.4533 24.6 27.2133 24.5866C26.98 24.5733 26.7133 24.5733 26.4533 24.5733C26.1933 24.5733 25.7533 24.6733 25.3933 25.0733C25.0267 25.4733 24 26.4333 24 28.3933C24 30.3533 25.4267 32.2466 25.6267 32.5133C25.8267 32.78 28.4333 36.8 32.4267 38.5266C33.3733 38.94 34.12 39.18 34.6933 39.3666C35.6467 39.6666 36.5133 39.6266 37.2 39.5266C37.9667 39.4133 39.5533 38.5666 39.8867 37.6333C40.22 36.7 40.22 35.9066 40.12 35.74H40.1Z"
                     fill="white"
                   /></svg></span
-            ></a>
+            ></a> -->
             <a rel="noopener noreferrer" href="$viber" target="_blank" class="contact-widget-item"
               ><span class="contact-widget-item-icon contact-widget-whatsapp d-flex align-items-center justify-content-center">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,8 +93,8 @@
                     d="M32.0043 17C23.5565 17 17 23.1931 17 31.5519C17 35.9278 18.7949 39.703 21.7097 42.3137C21.9545 42.5362 22.1028 42.8403 22.1102 43.1667L22.1918 45.8367C22.2215 46.6897 23.0967 47.2385 23.8754 46.8973L26.8496 45.5846C27.1018 45.4733 27.3836 45.451 27.6506 45.5252C29.0153 45.9035 30.4764 46.1037 31.9969 46.1037C40.4447 46.1037 47.0012 39.9107 47.0012 31.5519C47.0012 23.1931 40.4521 17 31.9969 17H32.0043ZM41.0158 28.1994L36.6102 35.1935C35.9056 36.3061 34.4074 36.5805 33.3542 35.7943L29.846 33.1687C29.5271 32.924 29.0821 32.9314 28.7631 33.1687L24.0312 36.7585C23.4007 37.2406 22.5775 36.4841 23.0002 35.8091L27.4058 28.815C28.1104 27.7025 29.6086 27.4281 30.6618 28.2143L34.17 30.8398C34.4889 31.0846 34.934 31.0772 35.2529 30.8398L39.9848 27.2501C40.6153 26.768 41.4385 27.5245 41.0158 28.1994Z"
                     fill="white"
                   /></svg></span
-            ></a> -->
-            <!-- <a rel="noopener noreferrer" href="$sharechat" target="_blank" class="contact-widget-item"
+            ></a>
+            <a rel="noopener noreferrer" href="$sharechat" target="_blank" class="contact-widget-item"
               ><span class="contact-widget-item-icon contact-widget-whatsapp d-flex align-items-center justify-content-center">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="64" height="64" rx="32" fill="#494949" />
@@ -153,7 +154,7 @@
                     </linearGradient>
                   </defs>
                 </svg> </span
-            ></a> -->
+            ></a>
             <a rel="noopener noreferrer" href="$weChat" target="_blank" class="contact-widget-item"
               ><span class="contact-widget-item-icon contact-widget-whatsapp d-flex align-items-center justify-content-center">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -302,7 +303,7 @@
                   /></svg></span
             ></a>
             <!-- SHOW MAIL AND PHONE IN MOBILE VERSION -->
-            <a rel="noopener noreferrer" href="$mail" target="_blank" class="contact-widget-item"
+            <!-- <a rel="noopener noreferrer" href="$mail" target="_blank" class="contact-widget-item"
               ><span class="contact-widget-item-icon contact-widget-whatsapp d-flex align-items-center justify-content-center">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="64" height="64" rx="32" fill="#D9E021" />
@@ -320,10 +321,10 @@
                     d="M43.3582 33.5478C43.026 33.5478 42.6788 33.4421 42.3466 33.3666C41.674 33.2184 41.013 33.0216 40.3688 32.7778C39.6684 32.523 38.8985 32.5362 38.2072 32.8149C37.516 33.0937 36.9522 33.6182 36.6245 34.2876L36.2923 34.967C34.8218 34.1489 33.4705 33.1329 32.2763 31.9474C31.0908 30.7532 30.0748 29.4019 29.2567 27.9314L29.8908 27.5086C30.5602 27.1809 31.0847 26.6171 31.3635 25.9259C31.6422 25.2346 31.6554 24.4647 31.4006 23.7643C31.1609 23.1188 30.9642 22.4581 30.8118 21.7865C30.7363 21.4544 30.6759 21.1071 30.6306 20.7599C30.4473 19.6964 29.8903 18.7333 29.0599 18.0441C28.2295 17.3549 27.1803 16.9848 26.1013 17.0005H21.5719C20.9212 16.9944 20.2769 17.1285 19.6827 17.3938C19.0885 17.6591 18.5585 18.0493 18.1287 18.5379C17.6989 19.0264 17.3794 19.6018 17.192 20.225C17.0045 20.8481 16.9536 21.5043 17.0425 22.1489C17.8468 28.4739 20.7355 34.3508 25.2522 38.8511C29.769 43.3514 35.6563 46.2187 41.9842 47H42.558C43.6713 47.0016 44.7463 46.5931 45.5775 45.8526C46.0552 45.4253 46.4367 44.9017 46.697 44.3161C46.9573 43.7305 47.0903 43.0963 47.0873 42.4555V37.9262C47.0688 36.8774 46.6869 35.8676 46.0068 35.0691C45.3267 34.2706 44.3906 33.7329 43.3582 33.5478ZM44.1131 42.6065C44.1128 42.8209 44.0669 43.0327 43.9783 43.228C43.8898 43.4232 43.7608 43.5974 43.5997 43.7388C43.431 43.8845 43.2338 43.9933 43.0206 44.0583C42.8074 44.1233 42.583 44.1431 42.3617 44.1163C36.7074 43.3913 31.4553 40.8046 27.434 36.7641C23.4126 32.7236 20.8508 27.4593 20.1527 21.8016C20.1287 21.5805 20.1497 21.3567 20.2146 21.1439C20.2795 20.9311 20.3868 20.7337 20.5301 20.5636C20.6716 20.4025 20.8458 20.2735 21.041 20.185C21.2363 20.0964 21.4481 20.0505 21.6625 20.0503H26.1918C26.5429 20.0424 26.8858 20.1573 27.1614 20.375C27.4369 20.5927 27.628 20.8996 27.7016 21.243C27.762 21.6557 27.8375 22.0633 27.9281 22.4659C28.1025 23.2618 28.3346 24.0439 28.6226 24.8061L26.5089 25.7875C26.3282 25.8704 26.1656 25.9882 26.0305 26.1341C25.8955 26.28 25.7905 26.4512 25.7218 26.6378C25.6531 26.8243 25.6219 27.0227 25.63 27.2213C25.6381 27.42 25.6854 27.6151 25.7691 27.7955C27.942 32.4498 31.6833 36.1911 36.3376 38.364C36.7052 38.515 37.1175 38.515 37.4851 38.364C37.6734 38.2966 37.8464 38.1926 37.9941 38.0578C38.1419 37.923 38.2614 37.7602 38.3457 37.5789L39.2817 35.4652C40.0622 35.7443 40.8588 35.9762 41.6672 36.1597C42.0698 36.2503 42.4774 36.3258 42.8901 36.3862C43.2335 36.4598 43.5404 36.6509 43.7581 36.9265C43.9758 37.202 44.0907 37.5449 44.0829 37.896L44.1131 42.6065Z"
                     fill="white"
                   /></svg></span
-            ></a>
+            ></a> -->
           </div>
           <!-- Якщо копірайт схована то додається клас hide_copy-->
-          <div class="mobile_copyright">
+          <div class="mobile_copyright hide_copy">
             <a rel="noopener noreferrer" href="#" target="_blank" class="contact-widget-item">
               <svg width="44" height="80" viewBox="0 0 44 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="5.8125" y="12" width="36" height="36" rx="18" fill="#DEECF9" />

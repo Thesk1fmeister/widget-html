@@ -295,13 +295,11 @@ body {
     .mobile {
       margin-bottom: -10px;
     }
-    .service_list {
-      width: 77px !important;
-    }
     .contact-widget-item svg {
       width: 48px;
       height: 48px;
     }
+
     .top,
     .bottom {
       display: none;
@@ -315,11 +313,17 @@ body {
       margin-bottom: -2px;
       border-radius: 32px;
       padding: 24px 0;
-      gap: 16px;
+      gap: 12px;
+      max-height: 481px !important;
       top: auto;
     }
     .service_list {
-      flex-direction: column;
+      padding-top: 10px;
+      gap: 12px !important;
+      border-radius: 32px;
+      width: 77px !important;
+      max-height: 378px;
+      flex-wrap: nowrap;
     }
     .mobile_copyright {
       display: flex;
@@ -342,6 +346,27 @@ body {
     .hide_copy {
       display: none !important;
     }
+
+    .scroll {
+      overflow-y: auto;
+    }
+    .scroll::-webkit-scrollbar-track {
+      background-color: #f1f3fb;
+    }
+
+    .scroll::-webkit-scrollbar-thumb {
+      background-color: #d0d0d0;
+      border-radius: 10px;
+    }
+
+    .scroll::-webkit-scrollbar {
+      border-radius: 10px;
+      width: 0px;
+    }
+
+    .scroll::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
 
@@ -354,6 +379,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: hidden;
 
   .widget {
     animation: fadeIn 350ms ease;
@@ -374,9 +400,14 @@ body {
     height: 64px;
   }
   .service_list {
+    padding-top: 10px;
+    width: 80px;
     display: flex;
     gap: 16px;
     flex-direction: column;
+    align-items: center;
+    border-radius: 32px;
+    max-height: 499px;
   }
 
   .rotate {
@@ -384,7 +415,7 @@ body {
   }
 
   .contact-widget-item:last-child {
-    padding-bottom: 18px;
+    padding-bottom: 12px;
   }
   .mobile {
     margin-bottom: -10px;
@@ -397,9 +428,34 @@ body {
   }
 
   .mobile .middle {
-    height: max-content;
+    max-height: 523px;
     padding: 12px;
     border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .scroll {
+    overflow-y: auto;
+  }
+  .scroll::-webkit-scrollbar-track {
+    background-color: #f1f3fb;
+  }
+
+  .scroll::-webkit-scrollbar-thumb {
+    background-color: #d0d0d0;
+    border-radius: 10px;
+  }
+
+  .scroll::-webkit-scrollbar {
+    border-radius: 10px;
+    width: 0px;
+  }
+
+  .scroll::-webkit-scrollbar {
+    display: none;
   }
 
   .mobile_copyright {
@@ -453,6 +509,7 @@ body {
       width: 77px;
     }
     .middle {
+      max-height: 481px !important;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -460,7 +517,7 @@ body {
       margin-bottom: -2px;
     }
     .service_list {
-      width: 48px;
+      max-height: 399px;
     }
     .contact-widget-item svg {
       width: 48px;
